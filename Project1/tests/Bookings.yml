@@ -1,0 +1,23 @@
+version: 2
+ 
+models:
+  - name: B_Bookings
+    columns:
+      - name: booking_date
+        tests:
+          - not_null
+
+      - name: booking_id
+        tests:
+          - unique
+
+      - name: booking_status
+        tests:
+          - accepted_values:
+              values: ['confirmed','cancelled']
+
+      - name: listing_id
+        tests:
+          - relationships:
+              to: ref('B_Listings')
+              field: listing_id

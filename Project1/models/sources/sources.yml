@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: my_bronze
+    database: DBT_PROJECT
+    schema: FOR_DBT
+    tables:
+      - name: Hosts
+      - name: Bookings
+      - name: Listings
+  
