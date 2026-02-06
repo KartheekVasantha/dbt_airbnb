@@ -1,0 +1,13 @@
+Project1:
+  outputs:
+    dev:
+      account: hxvzqdh-zx93240
+      database: DBT_PROJECT
+      password: Gollapalli@9510
+      role: ACCOUNTADMIN
+      schema: FOR_DBT
+      threads: 1
+      type: snowflake
+      user: Ramesh
+      warehouse: COMPUTE_WH
+  target: dev
