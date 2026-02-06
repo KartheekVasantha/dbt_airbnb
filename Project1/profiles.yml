@@ -3,7 +3,7 @@ Project1:
     dev:
       account: hxvzqdh-zx93240
       database: DBT_PROJECT
-      password: Gollapalli@9510
+      password: "{{env_var('SF_PWD')}}"
       role: ACCOUNTADMIN
       schema: FOR_DBT
       threads: 1
